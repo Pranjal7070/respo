@@ -1,0 +1,94 @@
+a {
+    padding: 10px 18px; 
+    margin-right: 8px; 
+    text-decoration: none;
+}
+
+
+.nav {
+    padding: 4px;
+    border : 2px solid black;
+}
+
+.picture {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content {
+    position: absolute;
+    bottom: 10px; 
+    width: 97.7%; 
+    background-color: rgba(0, 0, 0, 0.9); 
+    text-align: center; 
+    padding: 10px; 
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+ 
+.Image:hover .content {
+    opacity: 1; 
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.MyProfile{
+    text-align: center;
+    color:grey;
+}
+
+.MyProject {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+}
+
+.MyProject1, .MyProject2 {
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%; 
+}
+
+.MyProject1 img, .MyProject2 img {
+    margin-right: 20px; 
+}
+
+.description {
+    max-width: 600px; 
+}
+
+a {
+    font-weight: bold; 
+}
+
+p {
+    color:grey;
+}
+
+.Gallery , h3{
+    text-align: center;
+    margin-left: 25px;
+    color:grey;
+}
+
+.My_Photos{
+    display : flex;
+}
+
+.column{
+    display : flex;
+}
+
+@media (max-width: 1000px) {
+    .My_Photos{
+        flex: row;
+    }
+}
+
+@media(max-width: 768px)
+{
+    .My_Photos{
+        flex-direction: column;
+    }
+}
